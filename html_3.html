@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 만들기</title>
+</head>
+<body>
+    <div>
+        <form action="#">
+            <!--
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" placeholder="이름..">
+                    </li>
+                    <li> 
+                        <label for="mail">메일 주소</label>
+                        <input type="text" id="mail" placeholder="이메일..">
+                    </li>
+                </ul>
+            </fieldset>
+        -->
+            <br>
+            <br>
+
+            <fieldset>
+                <legen>회원가입</legen>
+                <ul>
+                    
+                    <li style="list-style-type: none;">
+                        <input type="hidden" id="hidden" value="서버에 전달할 값">
+                    </li>
+
+                    <li style="list-style-type: none;">
+                        <label for="id">사용자 ID</label>
+                        <input type="text" id="id" placeholder="ID 입력" value="junno0033">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="pw" placeholder="PW 입력">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="mail">메일 주소</label>
+                        <input type="email" id="mail" placeholder="메일 주소 @">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="tel">전화번호</label>
+                        <input type="tel" id="tel" placeholder="010-0000-0000" pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="number">나이</label>
+                        <input type="number" id="number" placeholder="나이 입력" min="0" max="100" style="width: 150px">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="range">오늘의 기분</label>
+                        <input type="range" id="range" min="0" max="100" step="10">
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="radio">성별</label>
+                        <input type="radio" id="radio" name="gender">남자
+                        <input type="radio" id="radio" name="gender" checked>여자
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="checkbox">좋아하는 동물</label>
+                        <input type="checkbox" id="checkbox" name="animal1">강아지
+                        <input type="checkbox" id="checkbox" name="animal2">고양이
+                        <input type="checkbox" id="checkbox" name="animal3">햄스터
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="date">생일</label>
+                        <input type="date" id="date">
+                        <!-- type 종류: month, week, time, datetime-local -->
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="date">직업</label>
+                        <select name="" id="">
+                            <option value="student">학생</option>
+                            <option value="businessman">직장인</option>
+                            <option value="lawyer">변호사</option>
+                            <option value="programer">개발자</option>
+                        </select>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="date">걸그룹</label>
+                        <select name="" id="">
+                            <optgroup label="르세라핌">
+                                <option value="le1">카즈하</option>
+                                <option value="le2">김채원</option>
+                                <option value="le3">사쿠라</option>
+                                <option value="le4">홍은채</option>
+                                <option value="le5">허윤진</option>
+                            </optgroup>
+                            <optgroup label="레드벨벳">
+                                <option value="red1">아이린</option>
+                                <option value="red2">슬기</option>
+                                <option value="red3">예리</option>
+                                <option value="red4">조이</option>
+                                <option value="red5">웬디</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <label for="intro">자기소개</label><br>
+                        <textarea name="" id="" col="30" row="5"></textarea>
+                    </li>
+                    
+
+                </ul>
+            </fieldset>    
+            <hr>
+            <div style="text-align: center;">
+                <button type="submit">가입하기</button>
+                <button type="reset">취소하기</button> <!--입력값 초기화-->
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>

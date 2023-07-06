@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 우선순위</title>
+    <style>
+        .style {
+            color: blue ;
+            /* !important : 우선순위 */
+            font-size: 50px;
+            font-style: italic;
+        }
+
+        #style {
+            color: green;
+        }
+
+        p {
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <p>CSS 우선순위 연습 중</p>
+    <p class="style">CSS 우선순위 연습 중</p>
+    <p class="style" id = style>CSS 우선순위 연습 중</p>
+    <p class="style" id = style style="color: lightskyblue;">CSS 우선순위 연습 중</p>
+
+    <!-- 스타일 우선 순위 -->
+    <!-- 1. 인라인 스타일  2. id 스타일  3. 클래스 스타일  4. 태그 스타일 -->
+
+</body>
+</html>

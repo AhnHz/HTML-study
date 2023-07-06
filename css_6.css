@@ -1,0 +1,25 @@
+/* 
+. -> 클래스, # -> ID 
+*/
+
+.p_tag {
+    color: deeppink;
+    font-size: 50px;
+}
+
+#p_tag2 {
+    color: grey;
+    font-size: 50px;
+}
+
+h2.tag {
+    border: 5px solid red;
+}
+
+h3, h4 {
+    color: darksalmon;
+}
+
+* {   
+    border: 1px dotted blue;
+}
