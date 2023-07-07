@@ -8,21 +8,11 @@
      legend {
         font-size: 25px;
         font-weight: bold
-     }
-
-     button {
-        margin: 20px 10px 10px 10px;
-     }
-
-     fieldset {
-        width: 500px ;
-     }
+     } 
 
     table, td, th { 
-        border-collapse : collapse; 
-        
-        
-    }  /*이중선 제거*/
+        border-collapse : collapse;     /*이중선 제거*/  
+    }  
     th {
         background-color: gray;
         text-align: center;
@@ -44,7 +34,7 @@
 
     <div  style="padding:10px; margin: 0 auto; width:540px; height: auto;">
         <form action="#">
-            <fieldset>
+            <fieldset style="width: 500px;">
                 <legend>필수 입력 정보</legend>
                 <table style="text-align: left;">
                     <colgroup>
@@ -89,7 +79,7 @@
             <br>
             <br>
 
-            <fieldset>
+            <fieldset style="width: 500px;">
                 <legend>선택 입력 정보</legend>
                 <table style="text-align: left;">
                     <colgroup>
@@ -124,8 +114,8 @@
                 </table>     
             </fieldset>
             <div style="text-align: center;">
-                <button type="submit" style="background-color: dodgerblue; width: 90px; height: 45px; font-size: 18px;">가입하기</button>
-                <button type="reset" style="background-color: indianred; width: 90px; height: 45px; font-size: 18px;">취소하기</button> 
+                <button type="submit" style="background-color: dodgerblue; width: 90px; height: 45px; font-size: 18px; margin: 20px 10px 10px 10px;">가입하기</button>
+                <button type="reset" style="background-color: indianred; width: 90px; height: 45px; font-size: 18px; margin: 20px 10px 10px 10px;">취소하기</button> 
             </div>
         </form>
     </div>
